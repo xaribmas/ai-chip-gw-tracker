@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GW de IA por jugador y proveedor de chips</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>GW de IA por jugador y proveedor de chips</h1>
+      <p class="sub" id="nota-general">Cargando datos…</p>
+    </div>
+    <div class="ctrl">
+      <label class="chk"><input type="checkbox" id="auto" checked> Actualizar solo cada <select id="intervalo"><option value="30">30 s</option><option value="60" selected>60 s</option><option value="300">5 min</option></select></label>
+      <button id="recargar" type="button">Recargar ahora</button>
+      <span class="est" id="estado" role="status" aria-live="polite"></span>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="h-mapa">
+      <h2 id="h-mapa">Mapa: GW por jugador y proveedor</h2>
+      <div class="leyenda" id="leyenda"></div>
+      <div class="tabla-wrap"><table class="mx" id="matriz"></table></div>
+      <p class="pie" id="pie-matriz"></p>
+    </section>
+
+    <section aria-labelledby="h-barras">
+      <h2 id="h-barras">Suma por proveedor y Nvidia frente al resto</h2>
+      <div class="tarjetas" id="tarjetas"></div>
+      <div id="barras"></div>
+      <h3>Nvidia frente al resto</h3>
+      <div class="vs" id="vs"></div>
+      <p class="pie" id="pie-barras"></p>
+    </section>
+
+    <section aria-labelledby="h-tend">
+      <h2 id="h-tend">Tendencias</h2>
+      <div class="grid-tend" id="tendencias"></div>
+    </section>
+
+    <section aria-labelledby="h-fuentes">
+      <h2 id="h-fuentes">Fuentes</h2>
+      <ul class="fuentes" id="fuentes"></ul>
+    </section>
+  </main>
+
+  <footer class="pie">No es una recomendación de inversión. Datos editables en <code>data/datos.json</code>.</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
