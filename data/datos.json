@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23",
+  "actualizado": "2026-11-24",
   "nota_general": "Compromisos anunciados (OpenAI, Meta, Anthropic) y capacidad instalada reportada (SpaceX). No son directamente comparables. n/d = sin GW publicados.",
   "escala_barra_gw": 10,
   "proveedores": [
@@ -14,7 +14,7 @@
       "nombre": "OpenAI",
       "celdas": {
         "nvidia": { "gw": 10, "nota": "mínimo, 10+ GW" },
-        "amd": { "gw": 6, "nota": "mínimo, 6+ GW" },
+        "amd": { "gw": 6, "nota": "mínimo, 6+ GW. TensorWave suma 0,457 GW (16-nov-26), sin confirmar si cuenta dentro" },
         "google": { "gw": 10, "nota": "chip propio con Broadcom" },
         "otros": { "gw": 0.75, "nota": "Cerebras" }
       }
@@ -113,6 +113,7 @@
     { "titulo": "Measured AI: rampa de cómputo de SpaceX", "url": "https://measuredai.substack.com/p/spacexsi-compute-ramp" },
     { "titulo": "Inside Deep Tech: Colossus 2", "url": "https://www.insidedeeptech.com/xai-colossus-2-memphis-gigawatt-ai-supercomputer-full-guide/" },
     { "titulo": "BigGo Finance: cómputo de SpaceX", "url": "https://finance.biggo.com/news/c8cd7f2f-e6af-4814-be27-d1c56160bc86" },
+    { "titulo": "Unite.AI: TensorWave y OpenAI, 457 MW de AMD", "url": "https://www.unite.ai/?p=519676" },
     { "titulo": "Gizmodo: Meta y AMD", "url": "https://gizmodo.com/meta-and-amd-team-up-to-take-on-nvidia-in-massive-ai-chip-deal-2000725893" }
   ]
 }
